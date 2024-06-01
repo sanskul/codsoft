@@ -1,0 +1,11 @@
+import getpass
+
+def main():
+    # Prompt the user to enter a password
+    password = getpass.getpass("Enter your password: ")
+    
+    # Print the entered password
+    print(f"Your password is: {password}")
+
+if __name__ == "__main__":
+    main()
