@@ -1,13 +1,11 @@
-import random
+import getpass
 
-user_choice = int(input("Enter your choice: Type 0 for Rock, 1 for Paper, 2 for Scissors: "))
+def main():
+    # Prompt the user to enter a password
+    password = getpass.getpass("Enter your password: ")
+    
+    # Print the entered password
+    print(f"Your password is: {password}")
 
-computer_choice = random.randint(0, 2)
-print("Computer choice:", computer_choice)
-
-if computer_choice == user_choice:
-    print("IT IS A DRAW")
-elif computer_choice > user_choice or (computer_choice == 0 and user_choice == 2):
-    print("YOU LOSE")
-else:
-    print("YOU WIN")
+if __name__ == "__main__":
+    main()
